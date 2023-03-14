@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript basic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 
+    #ADEFD1FF sirun kanach
+    #d9e0ff; sirun manuhsak bac
+ -->
+
+<body>
+
+    <header>
+        <h1 id="h1Header">JavaScript basic</h1>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <div><a href="#jsOperatorsLink">JS Operators</a></div>
+            <div><a href="#loopLink">Loops</a></div>
+            <div><a href="#switchLink">Switch statement</a></div>
+            <div><a href="#arrayLink">Arrays and its methods</a></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="jsOperatorsLink">
+            <h1>JavaScript Operators</h1>
+            <p>JavaScript has 10 types of operators</p>
+
+            <h2>Assignment operators</h2>
+            <p>=, and other operators plus "=", for example +=, -=, %= and so on</p>
+
+            <h2>Comparison operators</h2>
+            <p>==, !=, ===, !==, >, &lt;, >=, &lt;=</p>
+            <p>The operands can be numerical, string, logical, or object values</p>
+            <p>Եթե տիպերը տարբեր են լինում, ապա տեղի է ունենում տիպերի փոփոխություն, բացառությամբ այն դեպքի, երբ համեմատվում են strict mode-ով, որովհետև այդ ժամանակ կարևոր է նաև օպերանդի տիպը։</p>
+
+            <h2>Arithmetic operators</h2>
+            <p>+, -, *, /, %, **, unary +, unary -, increment (++), decrement (--)</p>
+            <p>postfix x++, prefix ++x</p>
+
+            <h2>Bitwise operators</h2>
+            <p>Works with 32 bit binary number. Այսինքն տրված թիվը վերածում է 32 բիթից բաղկացած 0-1-երի շարքի, գործողությունն անում է, հետո արդյունքը վերադարձնում է սովորական Number տիպով, կամ եթե BigInt է, ուրեմն տենց։ Կարճ ասած աշխատում է բիթերի հետ, հերթով
+                համապատասխան բիթերն իրար հետ համեմատելով։</p>
+            <p>& (bitwise and), | (bitwise or), ^ (bitwise xor), ~ (bitwise not), 2 hat poqri nshan (left shift), >> (right shift), >>> (zero-fill right shift)</p>
+
+            <h2>Logical operators</h2>
+            <p>&& (logical AND), || (logical OR), ! (logical NOT)</p>
+
+            <h2>String operator</h2>
+            <p>Concatenation +, for example ("my " + "book" = "my book") </p>
+
+            <h2>Conditional (ternary) operator</h2>
+            <p>It takes 3 operands</p>
+            <p>let variable = condition ? value1 : value2</p>
+            <p>if condition is true, variable = value1, otherwise variable = value2</p>
+
+            <h2>Comma operator (,)</h2>
+            <p>Voch enqan pitani ban. Xorhurd chi trvum ogtagorcel.</p>
+
+            <h2>Unary operators</h2>
+            <p>typeof, delete, void</p>
+
+            <h2>Relational operators</h2>
+            <p>in, instanseof (type stugelu hamar)</p>
+        </section>
+
+
+        <section id="loopLink">
+            <h1>Loop</h1>
+            <ul>
+                <li>for</li>
+                <li>do ... while</li>
+                <li>while</li>
+                <li>labeled statement </li>
+                <li>break statement</li>
+                <li>countinue statement</li>
+                <li>for ... of -> creates a loop Iterating over iterable objects (including Array, Map, Set, arguments object and so on)</li>
+                <li>for ... in </li>
+                <p>for...in iterates over property names, for...of iterates over property values</p>
+            </ul>
+        </section>
+
+        <section id="switchLink">
+            <h1>Switch</h1>
+            <p>amen case-ic heto anpayman piti lini 'break'</p>
+            <p>ete case-eri hamar nor popoxakan piti haytararenq, apa da petq e anenq {} pakagceri nersum, vor nuyn popoxakan@ haytararelu patjarov error chstananq</p>
+            <p>kareli e mi qani case miavorel</p>
+            <p>ete voch mi case chi ham@nknum, ayd depqum @ndunvum e 'default' case-@</p>
+            <p>default-@ kareli e nayev grel case-eri mejtexum</p>
+        </section>
+
+        <section id="arrayLink">
+            <h1>Array</h1>
+            <p>An array is a special kind of object. It is an ordered collection.</p>
+            <p>There are two syntaxes for creating an empty array: [] and new Array(). But new Array(3) creates array with length 3.</p>
+            <p>Get last elements - arr.at(-1) or arr[arr.length - 1]</p>
+            <p>Methods push/ pop, shift/ unshift. Methods push/pop run fast, while shift/unshift are slow, because elements need to be renumbered.</p>
+            <p>Loops - the oldest way for loop, for..of and for..in. the last one is actually a bad idea.</p>
+            <p>Array length - the greatest numeric index + 1. It can manualy changed. If we decrease length, the array is truncated</p>
+            <p>Conversation - arrays implement only toString conversion</p>
+            <p>Comparison - The == operator doesn't do item-by-item comparison. That's simple: don't use the == operator. Instead, compare them item-by-item in a loop or using iteration methods</p>
+
+            <h1>Array methods</h1>
+            <p><b>To add/remove elements: </b>push(...items), pop(), shift(), unshift(...items), splice(pos, deleteCount, ...items), slice(start, end), concat(...items)</p>
+            <p><b>To search among elements: </b>indexOf/lastIndexOf(item, pos), includes(value), find/filter(func), findIndex()</p>
+            <p><b>To iterate over elements: </b>forEach(func)</p>
+            <p><b>To transform the array: </b>map(func), sort(func), reverse(), split/join, reduce/reduceRight(func, initial)</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <h1>Thanks for attention !!!</h1>
+    </footer>
+
+    <!-- <script src="number.js"></script> -->
+    <!-- <script src="operators.js"></script> -->
+    <!-- <script src="string.js"></script> -->
+    <!-- <script src="loop.js"></script> -->
+    <!-- <script src="array.js"></script> -->
+    <!-- <script src="condition.js"></script> -->
+    <!-- <script src="function.js"></script> -->
+    <!-- <script src="object.js"></script> -->
+    <!-- <script src="map_set.js"></script> -->
+    <!-- <script src="destructuring_assignment.js"></script> -->
+    <!-- <script src="date_time.js"></script> -->
+    <!-- <script src="json.js"></script> -->
+    <!-- <script src="recursion.js"></script> -->
+    <!-- <script src="closure.js"></script> -->
+    <!-- <script src="prototype.js"></script> -->
+    <!-- <script src="func_binding"></script> -->
+    <script src="propertyFlags.js"></script>
+</body>
+
+</html>

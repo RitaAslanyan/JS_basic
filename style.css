@@ -1,0 +1,27 @@
+header,
+footer {
+    /* height: 50px; */
+    text-align: center;
+    background-color: #d9e0ff;
+    border: 2px solid black;
+}
+
+#h1Header {
+    font-size: 250%;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.menu {
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    background-color: #e8e9f0;
+    border: 2px solid black;
+    margin: 5px 0;
+}
+
+.menu>div {
+    margin: 0 5px;
+    padding: 5px;
+}
